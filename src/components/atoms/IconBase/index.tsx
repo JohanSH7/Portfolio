@@ -17,7 +17,7 @@ const Index = ({
   ...props
 }: IconBaseProps) => {
   if (raw && React.isValidElement(children)) {
-    return React.cloneElement(children, {
+    return React.cloneElement(children as React.ReactElement<React.SVGProps<SVGSVGElement>>, {
       width: size,
       height: size,
       className,
